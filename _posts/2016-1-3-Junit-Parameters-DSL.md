@@ -9,7 +9,7 @@ This is a simple example of things one can do with simple domain specific langua
 
 This type of syntax can be found in some very sophisticated frameworks such as [Spock](https://github.com/spockframework) and [Cucumber BDD](https://cucumber.io)
 
-### DSL for Custom inline Junit Parameters
+### Junit DSL for BDD style
 
 ```java
 public class StringsTest {
