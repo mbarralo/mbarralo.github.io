@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Junit - Scenarios Helper Class
+title: JUnit - Scenarios Helper Class
 ---
 
 This is just a small example of a simple Helper class to use declarative parameterized tests with the given-when-then syntax.
@@ -9,7 +9,7 @@ This is a simple example of things one can do with simple domain specific langua
 
 This type of syntax can be found in some very sophisticated frameworks such as [Spock](https://github.com/spockframework) and [Cucumber BDD](https://cucumber.io)
 
-### Junit DSL for BDD style
+### JUnit DSL for BDD style
 
 ```java
 public class StringsTest {
@@ -60,7 +60,7 @@ class Scenarios<T, R> {
 }
 ```
 
-Junit also contains support for Parameters out-of-the-box.
+JUnit also contains support for Parameters out-of-the-box.
 
 ****
 ----
