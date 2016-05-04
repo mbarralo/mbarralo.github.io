@@ -63,5 +63,4 @@ class Scenarios<T, R> {
 JUnit also contains support for Parameters out-of-the-box.
 
 ****
-----
 

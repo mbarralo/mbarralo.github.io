@@ -246,6 +246,17 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+.posts h1 {
+  margin: 0;
+}
+
+.post-meta {
+    margin: 0;
+    padding: 0;
+    color: #7a7a7a;
+        font-size: 15px;
+}
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
