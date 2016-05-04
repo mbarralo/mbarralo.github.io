@@ -1,15 +1,15 @@
 
 .highlight {
-     padding: 16px;
+    padding: 16px;
     overflow: auto;
-    font-size: 85%;
     line-height: 1.45;
     background-color: #f7f7f7;
     border-radius: 3px;
 }
 
 code {
-    font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 15px;
+    font-family: monospace;
 }
 
 .highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
