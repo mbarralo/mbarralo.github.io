@@ -3,7 +3,7 @@ layout: post
 title: JAX-RS - Asynchronous Methods
 ---
 
-How to achieve maximum throughput with asynchronous **JAX-RS**.
+How to achieve maximum throughput with asynchronous JAX-RS.
 
 How to allow http-threads to serve the requests without effort, as well as combining asynchrounous results from different services/mehods/whatever heavy stuff we want. 
 
