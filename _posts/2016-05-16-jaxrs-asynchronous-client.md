@@ -40,7 +40,11 @@ public static void main(String[] args) throws InterruptedException, ExecutionExc
 
     Future<Integer> a = asyncInvoker.get(Integer.class);
     Future<Integer> b = asyncInvoker.get(Integer.class);
-    System.out.println(a.get()+b.get());
+    try {
+        System.out.println(a.get() + b.get());
+    } catch (ExecutionException e) {
+        System.out.println("error: " + e.getMessage());
+    }
 
     System.out.println("check -> finished in " + (System.nanoTime() - start) / 1_000_000 + " ms");
     client.close();
