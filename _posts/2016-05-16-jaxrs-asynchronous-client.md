@@ -26,9 +26,10 @@ Requires only a simple maven dependency.
 </dependency>
 ```
 
-And here is the code for the client. This is a simple example.
-
 #### Simple Example
+
+Here is the code for the client. This is a simple example.
+
 
 ```java
 public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -47,10 +48,13 @@ public static void main(String[] args) throws InterruptedException, ExecutionExc
 }
 ```
 
+
+#### Complex Example
+
+
 A more complex example.. Say for instance that we want to coordinate several asynchronous requests.
 We can use a utility class `CountDownLatch`
 
-#### Complex Example
 
 ```java
 public static void main(String[] args){
@@ -103,5 +107,6 @@ private static void printErrors(Queue<String> errors) {
 ```
 
 Small examples to use the asynch syntax of (jersey) jax-rs client.
+
 
 ****
