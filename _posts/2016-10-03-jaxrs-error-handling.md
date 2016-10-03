@@ -3,7 +3,7 @@ layout: post
 title:  JAX-RS - Error Handling
 ---
 
-Handling Strategy for JAX-RS Runtime Exceptions
+Error handling strategy for JAX-RS Runtime Exceptions
 
 Even though we can use any class that extends `WebApplicationException` from jax rs packagge, there is a possibility to create custom exception mappers.
 
