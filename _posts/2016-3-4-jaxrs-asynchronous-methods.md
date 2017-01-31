@@ -5,9 +5,9 @@ title: JAX-RS - Asynchronous Methods
 
 How to achieve maximum throughput with asynchronous JAX-RS.
 
-How to allow http-threads to serve the requests without effort, as well as combining asynchrounous results from different services/mehods/whatever heavy stuff we want. 
+How to allow http-threads to serve the requests without effort, as well as combining asynchronous results from different remote services: 
 
-Even with the default 5 threads of `Payara` some amazing results were delivered.
+(Even with the default 5 threads of `Payara` some amazing results were delivered.)
 
 ### Asynchronous JAX-RS with Service Orchestration - :)
 
