@@ -20,7 +20,9 @@ public class RuntimeExceptionMapper implements ExceptionMapper<RuntimeException>
 
     @Override
     public Response toResponse(RuntimeException e) {
-        return Response.status(INTERNAL_SERVER_ERROR).entity(new Error(e.getMessage())).build();
+        return Response.status(INTERNAL_SERVER_ERROR)
+                .entity(new Error(e.getMessage()))
+                .build();
     }
 
     @XmlRootElement
