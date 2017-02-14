@@ -52,7 +52,7 @@ After this we can safely throw Runtime Exceptions without exposing internal deta
 ```
 
 No dependencies needed.
-This will produce the following Json:
+This will produce the following JSON:
 
 ```json
 {
