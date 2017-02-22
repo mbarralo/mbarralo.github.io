@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  JAX-RS - Asynchronous Client
+tags: javaee rest
 ---
 
 Simple JAX-RS client for asynchronous calls.
 
 This follows up on the previous blog post [Asynchronous Methods](/jaxrs-asynchronous-methods).
+
+***
 
 #### Maven Dependency
 
@@ -26,10 +29,13 @@ Requires only a simple maven dependency.
 </dependency>
 ```
 
-#### Simple Example
+***
 
-Here is the code for the client. This is a simple example.
+### Simple Example
 
+Here is the code for the client. It invokes two services in parallel and combines the result.
+
+#### Code:
 
 ```java
 public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -52,13 +58,15 @@ public static void main(String[] args) throws InterruptedException, ExecutionExc
 }
 ```
 
+***
 
-#### Complex Example
+### Complex Example
 
 
 A more complex example.. Say for instance that we want to coordinate several asynchronous requests.
 We can use a utility class `CountDownLatch`
 
+#### Code:
 
 ```java
 public static void main(String[] args){

@@ -1,0 +1,105 @@
+
+p {
+    line-height: 1.7;
+    color: #555;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 40px auto;
+    background: #eee;
+    width: 100%;
+}
+
+.post-meta-date {
+    color: #aaa;
+      font-style: italic;
+    font-weight: bolder;
+    font-size: 1.0rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.8px;
+}
+
+.post > .title {
+    text-align: center;
+}
+
+.post > .date {
+    margin-bottom: 1rem;
+}
+
+
+.post > .date, .post > .post-tags {
+    color: #aaa;
+    font-weight: 300;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.post > .post-tags {
+	 margin-bottom: 2rem;
+}
+
+.post > .post-tags > .item {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    background: #ededed;
+    color: #666;
+    letter-spacing: 1px;
+    margin: 3px 1px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tags > .item {
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 3px 9px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    background: #ededed;
+    color: #666;
+    letter-spacing: 1px;
+    margin: 0 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tag-list > .list > .item {
+    display: block;
+    width: 80%;
+
+}
+
+.tag-list > .list > .item > .url {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+         color: #666;
+}
+
+.tag-list > .list aside {
+    width: 25%;
+    float: right;
+    font-weight: 200;
+        font-size: 1.0rem;
+    color: #aaa;
+    text-align: right;
+    transition: all ease-in-out 0.2s;
+}

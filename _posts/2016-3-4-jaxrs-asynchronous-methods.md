@@ -1,6 +1,7 @@
 ---
 layout: post
 title: JAX-RS - Asynchronous Methods
+tags: javaee rest
 ---
 
 How to achieve maximum throughput with asynchronous JAX-RS.
@@ -9,7 +10,9 @@ How to allow http-threads to serve the requests without effort, as well as combi
 
 (Even with the default 5 threads of `Payara` some amazing results were delivered.)
 
-### Asynchronous JAX-RS with Service Orchestration - :)
+***
+
+#### Asynchronous JAX-RS with Service Orchestration - :)
 
 ```java
 @Path("/async")

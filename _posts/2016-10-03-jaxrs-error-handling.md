@@ -1,16 +1,20 @@
 ---
 layout: post
 title:  JAX-RS - Error Handling
+tags: javaee rest
 ---
 
-Error handling strategy for JAX-RS Runtime Exceptions
+This article shows how to create an error handling strategy for JAX-RS Runtime Exceptions.
 
 Even though we can use any class that extends `WebApplicationException` from jax rs packagge, there is a possibility to create custom exception mappers.
 
-#### Exception Mapper for Runtime Exception
+***
+
+### Exception Mapper for Runtime Exception
 
 Just add this class to your project and you will be rocking a JSON/XML proper response.
 
+#### Example:
 ```java
 import static javax.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
 

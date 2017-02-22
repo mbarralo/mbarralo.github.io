@@ -7,14 +7,13 @@ layout: default
     <article class="post">
 
 
-<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-      <a class="post-link" href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
 
+      <a class="post-link" href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
+      <p class="post-meta post-meta-date">{{ post.date | date: "%b %d %Y" }}</p>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>

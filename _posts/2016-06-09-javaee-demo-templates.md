@@ -1,10 +1,13 @@
 ---
 layout: post
 title:  JavaEE - Demo Templates
+tags: javaee
 ---
 
 I just created two new templates to use for demo purposes.
 Clone and modify as you wish!
+
+***
 
 ## JSF Template
 
@@ -19,6 +22,8 @@ This includes:
 Already has some persistence data bootstraped and initiated on deployment.
 
 This can be found in [javaee jsf demo](https://github.com/mbarralo/javaee-jsf-demo)
+
+***
 
 ## REST Microservice Template
 

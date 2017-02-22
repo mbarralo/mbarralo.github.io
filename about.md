@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+# About
+
 Personal Blog, to keep track and discuss all sorts of interesting things. Mostly hacking code on Java EE but also some insights to the Tech World and Software Engineering.
 
 ### More Information
