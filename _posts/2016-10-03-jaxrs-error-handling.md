@@ -6,7 +6,7 @@ tags: javaee rest
 
 This article shows how to create an error handling strategy for JAX-RS Runtime Exceptions.
 
-Even though we can use any class that extends `WebApplicationException` from jax rs packagge, there is a possibility to create custom exception mappers.
+Even though we can use any class that extends `WebApplicationException` from JAX-RS spec, there is a possibility to create custom exception mappers.
 
 ***
 
