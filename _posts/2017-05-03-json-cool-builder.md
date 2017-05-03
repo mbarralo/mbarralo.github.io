@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  JSON - Create Arrays with Java 8 Streams
+title:  JSON - Create Arrays with Streams
 tags: javaee rest
 ---
 
-This post shows how to create a cool JavaEE 7 JsonArray using Java 8 streams.
+This post shows how to create a cool *JavaEE 7* JsonArray using *Java 8* streams.
 
 In the "old" days we had to iterate through a collection of objects with primitive instructions such as `for` and `while` (imperative style).
-Java 8 allows you to build JsonArrays with Stream reduce terminal operation - `collect`.
+*Java 8* allows you to build JsonArrays with Stream reduce terminal operation - `collect`.
 
 ***
 
-### Cool JsonArray Build
+### Cool JsonArray Builder
 
 ```java
     @GET
