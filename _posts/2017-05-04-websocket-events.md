@@ -4,7 +4,7 @@ title:  WebSocket - Server Side Events
 tags: javaee websocket
 ---
 
-I have documented a little tutorial on how to push events to the clients from the server using **WebSockets**.
+I have documented a little tutorial on how to push events from the server to the clients using WebSockets.
 
 Using Websockets with Java EE 7 is extremely easy. You just need two things:
 * a **ServerEndpoint** class
