@@ -4,7 +4,7 @@ title:  WebSocket - Server Side Events
 tags: javaee websocket
 ---
 
-I have documented a little tutorial on how to push events from the server to the clients using WebSockets.
+I have documented a small tutorial on how to push events from the server to the clients using WebSockets.
 
 Using Websockets with Java EE 7 is extremely easy. You just need two things:
 * a **ServerEndpoint** class
@@ -51,6 +51,26 @@ The full code for the encoders and decoders is:
 
 ***
 
+### Message class
+
+```java
+public class ChatMessage {
+
+    private String content;
+    private String sender;
+    private LocalDateTime received;
+
+    public ChatMessage(String content, String sender) {
+        this.content = content;
+        this.sender = sender;
+        this.received = LocalDateTime.now();
+    }
+
+    // getters
+}
+```
+
+
 ### Encoder class
 
 ```java
@@ -84,6 +104,7 @@ public class ChatMessageDecoder implements Decoder.Text<ChatMessage> {
     }
 }
 ```
+
 
 Now that we have a way to encode and decode the messages, let's move  on to the server side events..
 
@@ -135,11 +156,11 @@ What if we want to broadcast messages based on events ocurring in the system? Wi
 The external event is fired and the method `event` acts as listener. 
 Notice we can even leverage asynchronous behaviour with a simple annotation `@Asynchronous`  because we are using EJB (via `@Singleton`).
 
-Now all that's left is create a simple client.
+Now all that's left is to create a simple client.
 
 ***
 
-### Javascript Client
+### Client
 
 ```javascript
     var app = angular.module("myApp", []);
@@ -168,6 +189,35 @@ Now all that's left is create a simple client.
             myEl.append('<span class="'+cssClass+'"><b><i>' + msg.received + '</i>' + '  ' + msg.sender + '</b>: ' + msg.content + '<br/></span>');
         };
     });
+```
+
+
+**HTML**
+
+```xml
+
+     <div class="row">
+        <div class="col-lg-6">
+            <h3 class="title">Chat Room</h3>
+            <div id="chat-messages"/>
+        </div>
+        <div class="col-lg-6">
+            <form role="form">
+                <legend>My Details</legend>
+                <div class="form-group">
+                    <label for="sender">Sender</label>
+                    <input type="text" class="form-control" id="sender" ng-model="form.sender" placeholder="Name...">
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Message</label>
+                    <input type="text" class="form-control" id="content" ng-model="form.content" placeholder="Message...">
+                </div>
+
+                <button class="btn btn-primary" ng-click="sendDetails()">Submit</button>
+            </form>
+        </div>
+    </div>
 ```
 
 This is using AngularJS but standard Javascript will do.
