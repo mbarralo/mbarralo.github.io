@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JUnit - Scenarios Helper Class
-tags: java junit
+tags: java testing
 ---
 
 This is just a small example of a simple Helper class to use declarative parameterized tests with the given-when-then syntax.

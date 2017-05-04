@@ -8,7 +8,7 @@ How to create fast and lean integration tests has been a concern for me for some
 
 I found that using **Arquillian** with remote containers is the fastest way for development phase, but for continuous integration purposes sometimes we have to use an embedded container. That does not mean it cannot be fast regardless.
 
-Using an embedded Tomee container is very simple and with these simple guidelines you will be up and running in no time.
+Using an embedded _Tomee_ container is very simple and with these simple guidelines you will be up and running in no time.
 
 ***
 
@@ -97,7 +97,7 @@ Next we create an arquillian configuration file for tomee container to avoid por
 
 ```
 
-Save this file as arquillian.xml in src/test/resources directory.
+Save this file as **arquillian.xml** in **src/test/resources** directory.
 
 ... and finally we create the test class.
 
@@ -129,13 +129,14 @@ public class HelloResourceTest {
 
 ``` 
 
-Very straightforward. We create the deployment package. use testable=false to emulate sandbox testing and verify the result.
+Very straightforward. We create the deployment package. use `testable=false` to emulate sandbox testing and verify the result.
 The HelloResource returns a simple JSON message:
 
->{
->   "message": "Hello World"
->}
-
+```json
+{
+   "message": "Hello World"
+}
+```
 
 That's it. Powerful Integration testing with minimum overhead.
 
