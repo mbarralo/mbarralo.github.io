@@ -7,8 +7,8 @@ tags: javaee websocket
 I have documented a little tutorial on how to push events to the clients from the server.
 
 Using Websockets with Java EE 7 is extremely easy. You just need two things:
-* a ServerEndpoint class
-* a Client to send messages or receive events
+* a *ServerEndpoint* class
+* a *Client* to send messages or receive events
 
 To demonstrate several events i have created a base ServerEndpoint class and a simple client in Javascript.
 
@@ -49,7 +49,9 @@ We declare the annotations `@ServerEndpoint` for class scope and `@onOpen`, `@on
 
 The full code for the encoders and decoders is:
 
-### Encoder/Decoder class
+***
+
+### Encoder class
 
 ```java
 public class ChatMessageEncoder implements Encoder.Text<ChatMessage> {
@@ -64,6 +66,8 @@ public class ChatMessageEncoder implements Encoder.Text<ChatMessage> {
     }
 }
 ```
+
+### Decoder class
 
 ```java
 public class ChatMessageDecoder implements Decoder.Text<ChatMessage> {
@@ -82,7 +86,9 @@ public class ChatMessageDecoder implements Decoder.Text<ChatMessage> {
 
 Now that we have a way to encode and decode the messages, let's move  on to the server side events..
 
-First to create a batch process lets modify our endpoint class to `@Singleton`
+First to create a batch process lets modify our endpoint class to become a Singleton.
+
+***
 
 ### Startup Singleton
 
@@ -97,19 +103,22 @@ public class ChatEndpoint
 This creates a startup singleton EJB. We control the synchronization behaviour, hence the  `@ConcurrencyManagement(ConcurrencyManagementType.BEAN)`.
 We could have used Container managed concurrency with @Lock(LockType.READ) as well.
 
-now that we have a singleton EJB let's create a batch process. *This will all be done inside the class `ChatEndpoint`.*
+Now that we have a singleton EJB let's create a batch process. *This will all be done inside the class `ChatEndpoint`.*
+
+***
 
 ### Batch Event
 
 ```java
     @Schedule(hour = "*", minute = "*", second = "*/10")
     public void batch() {
-        Logger.getLogger(ChatEndpoint.class.getName()).log(Level.INFO, "pinging clients..");
         broadcastMessage(new ChatMessage("server event", SYSTEM));
     }
 ```
 
 This creates a timer scheduled process that will run every ten seconds and send messages to the connected clients.
+
+***
 
 ### External Event
 
@@ -118,7 +127,6 @@ What if we want to broadcast messages based on events ocurring in the system? Wi
 ```java
     @Asynchronous
     public void event(@Observes String resourceMessage) {
-        Logger.getLogger(ChatEndpoint.class.getName()).log(Level.INFO, "received message..");
         broadcastMessage(new ChatMessage(resourceMessage, RESOURCE));
     }
 ```
@@ -128,7 +136,9 @@ Notice we can even leverage asynchronous behaviour with a simple annotation `@As
 
 Now all that's left is create a simple client.
 
- ### Javascript Client
+***
+
+### Javascript Client
 
 ```javascript
     var app = angular.module("myApp", []);
