@@ -11,7 +11,7 @@ In the "old" days we had to iterate through a collection of objects with primiti
 
 ***
 
-### Cool JsonArray Builder
+#### Cool JsonArray Builder
 
 ```java
     @GET

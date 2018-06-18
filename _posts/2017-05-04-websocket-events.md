@@ -14,7 +14,7 @@ To demonstrate several events i have created a base ServerEndpoint class and a s
 
 ***
 
-### ServerEndpoint class
+#### ServerEndpoint class
 
 ```java
 @ServerEndpoint(value = "/wss", decoders = ChatMessageDecoder.class, encoders = ChatMessageEncoder.class)
@@ -51,7 +51,7 @@ The full code for the encoders and decoders is:
 
 ***
 
-### Message class
+#### Message class
 
 ```java
 public class ChatMessage {
@@ -71,7 +71,7 @@ public class ChatMessage {
 ```
 
 
-### Encoder class
+#### Encoder class
 
 ```java
 public class ChatMessageEncoder implements Encoder.Text<ChatMessage> {
@@ -88,7 +88,7 @@ public class ChatMessageEncoder implements Encoder.Text<ChatMessage> {
 ```
 
 
-### Decoder class
+#### Decoder class
 
 ```java
 public class ChatMessageDecoder implements Decoder.Text<ChatMessage> {
@@ -112,7 +112,7 @@ First to create a batch process lets modify our endpoint class to become a Singl
 
 ***
 
-### Startup Singleton
+#### Startup Singleton
 
 ```java
 @Singleton
@@ -129,7 +129,7 @@ Now that we have a singleton EJB let's create a batch process. *This will all be
 
 ***
 
-### Batch Event
+#### Batch Event
 
 ```java
     @Schedule(hour = "*", minute = "*", second = "*/10")
@@ -142,7 +142,7 @@ This creates a timer scheduled process that will run every ten seconds and send 
 
 ***
 
-### External Event
+#### External Event
 
 What if we want to broadcast messages based on events ocurring in the system? With Java EE this becomes extremely simple.
 
@@ -160,7 +160,7 @@ Now all that's left is to create a simple client.
 
 ***
 
-### Client
+#### Client
 
 ```javascript
     var app = angular.module("myApp", []);
