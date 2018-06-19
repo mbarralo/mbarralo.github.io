@@ -4,7 +4,7 @@ title:  Security - CSRF
 tags: security
 ---
 
-This will be the first post of a **Web Security Series**. To start this series let's address one of the known web security vulnerabilities - Cross Site Request Forgery, know simply as CSRF (or XSRF).
+This will be the first post of a **Web Security Series**. To start this series let's address one of the known web security vulnerabilities - Cross Site Request Forgery, known simply as CSRF (or XSRF).
 
 ## CSRF
 
@@ -30,7 +30,7 @@ Even with no session cookies or other (i.e. stateless rest services), **http bas
 
 ## Solution
 
-Use a CSRF Synchronizer Token. This is something that it is impossible for the attacker site to know about. On **POST/PUT/DELETE** this will be added to the payload as an HTTP  parameter.
+Use a [CSRF Synchronizer Token](https://en.wikipedia.org/wiki/Cross-site_request_forgery#Synchronizer_token_pattern). This is something that it is impossible for the attacker site to know about. On **POST/PUT/DELETE** this will be added to the payload as an HTTP  parameter.
 
 With spring-security module the protection is enabled by default.
 We can customize.
@@ -54,6 +54,6 @@ We can customize.
 
 ### Caveats
 
-* Beware *CORS* enablement. If the *CORS* is too relaxed can undermine *CSRf* protection.
+* Beware *CORS* enablement. If the *CORS* is too relaxed can undermine *CSRF* protection.
 
 * Even with stateless applications. If the server returns  stateless cookie (authentication) the browser will still send those as part of the request.
