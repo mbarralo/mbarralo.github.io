@@ -40,7 +40,7 @@ Injecting a simple tag to execute random javascript.
 
 There are two well known types of XSS attacks (Stored and Reflected). Stored or persistent Xss attacks are saved/persisted in the backend and can be retrieved later for various uses. Reflected are the ones shown in the previous examples.
 
-To address both the issues both user **input validation** should be enforced as well as **output enconding**.
+To address both the issues, both user **input validation** should be enforced as well as **output enconding**.
 
 ### Input Validation
 
