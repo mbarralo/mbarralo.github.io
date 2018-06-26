@@ -10,7 +10,7 @@ Using Websockets with Java EE 7 is extremely easy. You just need two things:
 * a **ServerEndpoint** class
 * a **Client** to send messages or receive events
 
-To demonstrate several events i have created a base ServerEndpoint class and a simple client in Javascript.
+To demonstrate several events I have created a base ServerEndpoint class and a simple client in Javascript.
 
 ***
 
@@ -45,7 +45,7 @@ public class ChatEndpoint {
 }
 ```
 In it's simplest form this is all that is needed to have a "chatty" endpoint.
-We declare the annotations `@ServerEndpoint` for class scope and `@onOpen`, `@onClose` and `@onMessage`. The annotations and method responsability is quite intuitive.
+We declare the annotations `@ServerEndpoint` for class scope and `@onOpen`, `@onClose` and `@onMessage`. The annotations and method responsibility is quite intuitive.
 
 The full code for the encoders and decoders is:
 
@@ -144,7 +144,7 @@ This creates a timer scheduled process that will run every ten seconds and send 
 
 #### External Event
 
-What if we want to broadcast messages based on events ocurring in the system? With Java EE this becomes extremely simple.
+What if we want to broadcast messages based on events occurring in the system? With Java EE this becomes extremely simple.
 
 ```java
     @Asynchronous

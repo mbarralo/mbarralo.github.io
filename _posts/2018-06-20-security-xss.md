@@ -40,11 +40,11 @@ Injecting a simple tag to execute random javascript.
 
 There are two well known types of XSS attacks (Stored and Reflected). Stored or persistent Xss attacks are saved/persisted in the backend and can be retrieved later for various uses. Reflected are the ones shown in the previous examples.
 
-To address both the issues, both user **input validation** should be enforced as well as **output enconding**.
+To address both the issues, both user **input validation** should be enforced as well as **output encoding**.
 
 ### Input Validation
 
-We can use the framework of choice to help validate user input. We should strive for whitelising as much as possible.
+We can use the framework of choice to help validate user input. We should strive for whitelisting as much as possible.
 
 ```java
 
@@ -81,4 +81,4 @@ Leverage the framework encoding capabilities to encode the output to prohibit wr
 **Response Header**
 - X-XSS-Protection: 1; mode=block
 
-Although modern browser use this header to validate XSS potential responses and block the output. This shoould not be relied upon as some browsers can disregard this instruction. 
+Although modern browser use this header to validate XSS potential responses and block the output. This should not be relied upon as some browsers can disregard this instruction. 

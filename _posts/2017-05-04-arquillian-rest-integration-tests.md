@@ -74,7 +74,7 @@ For Arquillian tests with Tomee container you need the following _Maven_ depende
     </dependencies>
 ```
 
-Next we create an arquillian configuration file for tomee container to avoid port conficts.
+Next we create an arquillian configuration file for tomee container to avoid port conflicts.
 
 ***
 
