@@ -1,10 +1,14 @@
 
+.highlighter-rouge {
+    border: 1px solid #eae7e3;
+    border-radius: 4px;
+}
+
 .highlight {
-    padding: 14px;
+    padding: 10px;
     overflow: auto;
-    line-height: 1.45;
+    line-height: 1.25;
     background-color: #f7f7f7;
-    border-radius: 3px;
 }
 
 code {
@@ -12,7 +16,7 @@ code {
     font-family: monospace;
 }
 
-.highlight pre, pre, .highlight .hll { padding: 6px 10px; }
+.highlight pre, pre, .highlight .hll { padding: 4px 8px; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
