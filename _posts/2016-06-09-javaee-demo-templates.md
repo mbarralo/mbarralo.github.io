@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  JavaEE - Demo Templates
+title:  Java EE Demo Templates
 tags: javaee
+icon: images/github.png
 ---
 
 I just created two new templates to use for demo purposes.

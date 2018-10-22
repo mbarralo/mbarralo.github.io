@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  JAX-RS - Asynchronous Client
+title:  Rest Asynchronous Client
 tags: javaee rest
+icon: images/javaee.png
 ---
 
 Simple JAX-RS client for asynchronous calls.

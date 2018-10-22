@@ -1,7 +1,8 @@
 ---
 layout: post
-title: JAX-RS - Asynchronous Methods
+title: Rest Asynchronous Server
 tags: javaee rest
+icon: images/javaee.png
 ---
 
 How to achieve maximum throughput with asynchronous JAX-RS.

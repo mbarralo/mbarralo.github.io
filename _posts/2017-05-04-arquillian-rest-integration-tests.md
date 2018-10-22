@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Arquillian - Rest Integration Tests
+title: Integration Testing with Arquillian and Tomee
 tags: javaee testing
+icon: images/arquillian.png
 ---
 
 How to create fast and lean integration tests has been a concern for me for some time.

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Security - CSRF
+title:  Security Series - CSRF
 tags: security
+icon: images/security.png
 ---
 
 This will be the first post of a **Web Security Series**. To start this series let's address one of the known web security vulnerabilities - Cross Site Request Forgery, known simply as CSRF (or XSRF).
@@ -57,3 +58,5 @@ We can customize.
 * Beware *CORS* enablement. If the *CORS* is too relaxed can undermine *CSRF* protection.
 
 * Even with stateless applications. If the server returns  stateless cookie (authentication) the browser will still send those as part of the request.
+
+****

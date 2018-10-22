@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  JAX-RS - Error Handling
+title:  Rest Error Handling
 tags: javaee rest
+icon: images/javaee.png
 ---
 
 This article shows how to create an error handling strategy for JAX-RS Runtime Exceptions.

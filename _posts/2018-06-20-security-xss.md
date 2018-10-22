@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Security - XSS
+title:  Security Series - XSS
 tags: security
+icon: images/security.png
 ---
 
 This is the second post of a **Web Security Series**. Let's talk about the well known XSS (Cross-Site Scripting) attack.
@@ -81,4 +82,7 @@ Leverage the framework encoding capabilities to encode the output to prohibit wr
 **Response Header**
 - X-XSS-Protection: 1; mode=block
 
-Although modern browser use this header to validate XSS potential responses and block the output. This should not be relied upon as some browsers can disregard this instruction. 
+Although modern browser use this header to validate XSS potential responses and block the output. This should not be relied upon as some browsers can disregard this instruction.
+
+****
+ 
