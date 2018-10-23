@@ -2,7 +2,7 @@
 layout: post
 title:  Rest Asynchronous Client
 tags: javaee rest
-icon: images/javaee.png
+icon: images/java.png
 ---
 
 Simple JAX-RS client for asynchronous calls.

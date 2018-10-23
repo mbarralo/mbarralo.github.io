@@ -2,7 +2,7 @@
 layout: post
 title:  WebSocket Server Events
 tags: javaee websocket
-icon: images/javaee.png
+icon: images/java.png
 ---
 
 I have documented a small tutorial on how to push events from the server to the clients using WebSockets.

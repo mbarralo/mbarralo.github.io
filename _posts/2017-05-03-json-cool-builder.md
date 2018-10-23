@@ -2,7 +2,7 @@
 layout: post
 title:  Create Json Arrays with Streams
 tags: javaee rest
-icon: images/javaee.png
+icon: images/java.png
 ---
 
 This post shows how to create a cool *JavaEE 7* JsonArray using *Java 8* streams.

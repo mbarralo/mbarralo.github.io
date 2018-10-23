@@ -3,27 +3,30 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="title">{{ page.title }}</h1>
 
-  <span class="date">
-    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
-    {% if site.read-time %} - {% include read-time.html %}{% endif %}
+
+    <h1 class="title">{{ page.title }}</h1>
+
+
+    <span class="date">
+    <time datetime="{{ page.date | date:" %d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
+        {% if site.read-time %} - {% include read-time.html %}{% endif %}
 </span>
 
-
-<div class="post-tags">
-    {% for tag in page.tags %}
+    <div class="post-tags">
+        {% for tag in page.tags %}
         <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
-    {% endfor %}
-</div>
+        {% endfor %}
+    </div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+    <div class="entry">
+        {{ content }}
+    </div>
 
-  {% include disqus.html %}
+    <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+
+    {% include disqus.html %}
 </article>
